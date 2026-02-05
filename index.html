@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Work & Interests</title>
+
+  <!-- Distill-inspired styling -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.8);
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    .distill-header {
+      background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+      border-bottom: 1px solid #e0e0e0;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: rgba(0, 0, 0, 0.9);
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 3rem 0 1rem 0;
+      color: rgba(0, 0, 0, 0.85);
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3px;
+      background: linear-gradient(to right, #4285f4, #ea4335);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      color: rgba(0, 0, 0, 0.75);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .section-description {
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.65);
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 5rem;
+      padding: 2rem 0;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #4285f4;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s;
+    }
+
+    a:hover {
+      border-bottom: 1px solid #4285f4;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      padding: 1.5rem;
+      background: #fafafa;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .section-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 500;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .explore-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #4285f4;
+      color: white !important;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+      border-bottom: none !important;
+    }
+
+    .explore-link:hover {
+      background: #3367d6;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="distill-header">
+    <div class="container">
+      <h1>My Work & Interests</h1>
+      <p class="subtitle">Exploring the intersection of science, technology, and curiosity</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="machine-learning">
+      <h2>Understanding and Explaining (to myself) Machine Learning</h2>
+      <img src="https://picsum.photos/seed/ml/800/300" alt="Machine Learning" class="section-image">
+      <p>
+        A journey through machine learning concepts, breaking down complex ideas into digestible explanations.
+        This is my attempt to solidify my understanding by teaching what I learn.
+      </p>
+      <p class="section-description">
+        Topics include neural networks, transformers, reinforcement learning, and the mathematical foundations that power modern AI.
+      </p>
+    </section>
+
+    <section id="visualizing-biology">
+      <h2>Visualizing Biology</h2>
+      <img src="https://picsum.photos/seed/biology/800/300" alt="Visualizing Biology" class="section-image">
+      <p>
+        Creating interactive visualizations to understand biological systems and processes.
+        Making the invisible visible through computational tools and creative representations.
+      </p>
+      <p class="section-description">
+        From cellular mechanisms to ecosystem dynamics, exploring life through the lens of data visualization.
+      </p>
+      <a href="visualizing-biology.html" class="explore-link">Explore Biology Visualizations →</a>
+    </section>
+
+    <section id="dna-nanotech">
+      <h2>DNA Nanotechnology</h2>
+      <img src="https://picsum.photos/seed/dna/800/300" alt="DNA Nanotechnology" class="section-image">
+      <p>
+        Exploring the fascinating world where biology meets engineering. DNA origami, molecular computing,
+        and the programmable nature of biological molecules.
+      </p>
+      <p class="section-description">
+        Building nanoscale structures and devices using DNA as both information storage and construction material.
+      </p>
+    </section>
+
+    <section id="tennis">
+      <h2>The Blackhole That Is Tennis</h2>
+      <img src="https://picsum.photos/seed/tennis/800/300" alt="Tennis" class="section-image">
+      <p>
+        An endless source of fascination, frustration, and joy. Once you're in, there's no escape.
+      </p>
+      <p class="section-description">
+        Strategy, technique, mental game, and the eternal quest for consistency. Also, why is the serve so hard?
+      </p>
+    </section>
+
+    <section id="astronomy">
+      <h2>Astronomy</h2>
+      <img src="https://picsum.photos/seed/astronomy/800/300" alt="Astronomy" class="section-image">
+      <p>
+        Looking up at the night sky and trying to make sense of the cosmos. From backyard telescope observations
+        to understanding the physics of stellar evolution.
+      </p>
+      <p class="section-description">
+        Exploring the universe one photon at a time.
+      </p>
+    </section>
+
+    <section id="running">
+      <h2>Running</h2>
+      <img src="https://picsum.photos/seed/running/800/300" alt="Running" class="section-image">
+      <p>
+        The simplest form of movement, yet endlessly complex. Training, physiology, and the meditative
+        quality of putting one foot in front of the other.
+      </p>
+      <p class="section-description">
+        Miles logged, lessons learned, and the pursuit of that perfect run.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Built with inspiration from <a href="https://distill.pub" target="_blank">Distill.pub</a></p>
+    </div>
+  </footer>
+
+  <!-- Optional: Add Distill template scripts for enhanced features -->
+  <script src="https://distill.pub/template.v2.js"></script>
+</body>
+</html>
