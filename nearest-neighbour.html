@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Quantization for Nearest Neighbour Search | My Work & Interests</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.8);
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    .distill-header {
+      background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+      border-bottom: 1px solid #e0e0e0;
+      padding: 3rem 0;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #4285f4;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: transform 0.2s;
+    }
+
+    .back-link:hover {
+      transform: translateX(-3px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: rgba(0, 0, 0, 0.9);
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 1rem 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 3rem 0 1rem 0;
+      color: rgba(0, 0, 0, 0.85);
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3px;
+      background: linear-gradient(to right, #4285f4, #ea4335);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      color: rgba(0, 0, 0, 0.75);
+    }
+
+    ul {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #4285f4;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s;
+    }
+
+    a:hover {
+      border-bottom: 1px solid #4285f4;
+    }
+
+    .callout {
+      background: #f0f9ff;
+      border-left: 4px solid #4285f4;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+
+    .slides-link {
+      display: inline-block;
+      margin: 2rem 0;
+      padding: 1rem 2rem;
+      background: #4285f4;
+      color: white !important;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+      border-bottom: none !important;
+    }
+
+    .slides-link:hover {
+      background: #3367d6;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    }
+
+    footer {
+      margin-top: 5rem;
+      padding: 2rem 0;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="distill-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <h1>Product Quantization for Nearest Neighbour Search</h1>
+      <p class="meta">April 29, 2022</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <p>
+        This is a set of slides I presented in a paper reading session,
+        to help understand how we can do nearest neighbour search for embeddings.
+      </p>
+
+      <a href="https://docs.google.com/presentation/d/1P9_nafB6IsT3_cGYXBpOoHtjosvMjmF9/edit#slide=id.p1" target="_blank" class="slides-link">
+        View Presentation Slides →
+      </a>
+
+      <div class="callout">
+        <p>
+          <strong>Key Insight:</strong> Product Quantization enables efficient approximate nearest neighbor search
+          in high-dimensional spaces by decomposing the space into subspaces and quantizing each independently.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>
+          <a href="https://lear.inrialpes.fr/pubs/2011/JDS11/jegou_searching_with_quantization.pdf" target="_blank">
+            Product Quantization for Nearest Neighbour Search (Original Paper)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/facebookresearch/faiss" target="_blank">
+            FAISS (Facebook AI Similarity Search) Github repository
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=sKyvsdEv6rk" target="_blank">
+            FAISS Intro Video
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=B7wmo_NImgM" target="_blank">
+            Choosing Indexes for Similarity Search Video
+          </a>
+        </li>
+        <li>
+          <a href="https://courses.cs.ut.ee/MTAT.05.127/2017_spring/uploads/Main/lecture-2.pdf" target="_blank">
+            Quantization Lecture
+          </a>
+        </li>
+        <li>
+          <a href="http://www.lx.it.pt/~mtf/Vector_quantization.pdf" target="_blank">
+            Scalar and Vector Quantization (Mario Figuereido)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.robots.ox.ac.uk/~az/lectures/aims-big_data/relja_big_data_ann_flat.pdf" target="_blank">
+            Approximate Nearest Neighbour Slides (Oxford)
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        <a href="index.html">Back to Home</a> |
+        Built with inspiration from <a href="https://distill.pub" target="_blank">Distill.pub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://distill.pub/template.v2.js"></script>
+</body>
+</html>
